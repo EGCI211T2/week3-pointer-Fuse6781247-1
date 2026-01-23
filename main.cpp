@@ -17,7 +17,7 @@ cout<<setw(3)<<*pa<<endl;
 
 pa = &a[0];  
 pb = &a[SIZE-1];
-for (i=0; i<SIZE/2; i++)
+for (i=0; i<SIZE/2; i++) //
 {
    temp = *pa;  
    *pa = *pb;  
