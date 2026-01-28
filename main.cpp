@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 
 using namespace std;
 
@@ -7,14 +8,13 @@ int main(int argc, char *argv[]){
   int *pa, *pb, i, temp;
   int n;
 
-  cout<< "How many numbers that you need? ";
-  cin>> n;
+  n = argc - 1;
 
   pa= new int[n];
 
   cout << "Enter the numbers: ";
   for (i=0; i<n; i++ ){
-    cin >> *pa;
+    *pa = atoi(argv[i+1]);
     pa++;
   }
 
