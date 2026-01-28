@@ -1,10 +1,11 @@
 DEPS= test
+var ?=
 
 compile: main.cpp 
 	g++ main.cpp -o $(DEPS)
 
 run: $(DEPS)
-	./$(DEPS)
+	./$(DEPS) $(var)
 
-clean: $(DEPS)
+clean:
 	rm $(DEPS)
